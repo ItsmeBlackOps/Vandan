@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Survey Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* Alice blue background */
+            color: #333;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Makes sure padding doesn't affect width */
+        }
+        .submit-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .image-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+        .image-table td, .image-table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .image-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Survey Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback"></textarea>
+            </div>
+            <!-- Two new fields -->
+            <div class="form-group">
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <div class="form-group">
+                <label for="range">Satisfaction Level (0-10):</label>
+                <input type="range" id="range" name="range" min="0" max="10">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Table with images -->
+    <table class="image-table">
+        <tr>
+            <th>Item</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td>Item 1</td>
+            <td><img src="https://i.ibb.co/Vv3qhv9/Image1.png" style="width:100px;height:100px;"></td>
+        </tr>
+        <tr>
+            <td>Item 2</td>
+            <td><img src="https://i.ibb.co/XS2H5jJ/Image2.png" style="width:100px;height:100px;"></td>
+        </tr>
+    </table>
+</body>
+</html>
